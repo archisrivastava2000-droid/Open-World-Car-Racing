@@ -1,9 +1,9 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>OPEN ROAD 3D</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,8 +12,9 @@
 <div id="hud">
   <h2>OPEN ROAD 3D</h2>
   <div id="speed">0 KM/H</div>
-  <div id="distance">Distance: 0 m</div>
-  <div id="nitroText">NITRO READY</div>
+  <div id="distance">DISTANCE: 0 M</div>
+  <div id="nitroText">NITRO 100%</div>
+  <div id="message">SYSTEM READY</div>
 </div>
 
 <div id="garage">
@@ -23,11 +24,15 @@
 </div>
 
 <div id="controls">
-  <button id="left">◀</button>
-  <button id="right">▶</button>
-  <button id="brake">BRAKE</button>
-  <button id="gas">GAS</button>
-  <button id="nitro">NITRO ⚡</button>
+  <div class="steering">
+    <button id="left">◀</button>
+    <button id="right">▶</button>
+  </div>
+  <div class="driving">
+    <button id="brake">BRAKE</button>
+    <button id="gas">GAS</button>
+    <button id="nitro">⚡ NITRO</button>
+  </div>
 </div>
 
 <script type="module" src="game.js"></script>
