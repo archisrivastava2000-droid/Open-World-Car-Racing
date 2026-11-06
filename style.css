@@ -1,0 +1,7 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{overflow:hidden;background:#87ceeb;font-family:Arial}
+#game{width:100vw;height:100vh;position:relative}
+#hud{position:absolute;top:15px;left:15px;color:white;z-index:2;text-shadow:2px 2px 4px black}
+#speed{font-size:22px;font-weight:bold}
+#controls{position:absolute;bottom:25px;width:100%;display:flex;justify-content:space-around;z-index:3}
+button{background:#101d36;color:white;border:2px solid white;border-radius:15px;padding:18px;font-weight:bold;font-size:18px;touch-action:none}
