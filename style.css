@@ -1,42 +1,50 @@
 
-*{
+* {
  margin:0;
  padding:0;
  box-sizing:border-box;
 }
 
-body{
+body {
  overflow:hidden;
  background:#87ceeb;
  font-family:Arial,sans-serif;
+ touch-action:none;
 }
 
-#hud{
+canvas {
+ position:fixed;
+ inset:0;
+ z-index:0;
+ display:block;
+}
+
+#hud {
  position:fixed;
  top:15px;
- left:15px;
+ left:12px;
  z-index:5;
  color:white;
  text-shadow:2px 2px 5px black;
  pointer-events:none;
 }
 
-#hud h2{
- font-size:23px;
+#hud h2 {
+ font-size:22px;
  margin-bottom:8px;
 }
 
-#speed{
- font-size:25px;
+#speed {
+ font-size:27px;
  font-weight:bold;
 }
 
-#distance,#nitroText{
- font-size:15px;
- margin-top:5px;
+#distance,#nitroText,#message {
+ font-size:14px;
+ margin-top:6px;
 }
 
-#garage{
+#garage {
  position:fixed;
  top:15px;
  right:10px;
@@ -45,33 +53,39 @@ body{
  gap:5px;
 }
 
-#controls{
+#controls {
  position:fixed;
  bottom:20px;
  width:100%;
+ padding:0 12px;
  display:flex;
- justify-content:space-around;
- align-items:center;
+ justify-content:space-between;
+ align-items:end;
  z-index:5;
- flex-wrap:wrap;
- gap:8px;
 }
 
-button{
+.steering,.driving {
+ display:flex;
+ gap:8px;
+ align-items:center;
+}
+
+button {
  background:#101d36;
  color:white;
  border:2px solid white;
- border-radius:12px;
- padding:15px 12px;
+ border-radius:13px;
+ padding:16px 13px;
  font-size:15px;
  font-weight:bold;
  touch-action:none;
+ user-select:none;
 }
 
-button:active{
+button:active {
  background:#e00020;
 }
 
-#nitro{
+#nitro {
  background:#075baf;
 }
