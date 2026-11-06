@@ -4,44 +4,74 @@
  padding:0;
  box-sizing:border-box;
 }
+
 body{
  overflow:hidden;
  background:#87ceeb;
  font-family:Arial,sans-serif;
 }
-#game{
- position:fixed;
- inset:0;
- z-index:1;
- pointer-events:none;
-}
+
 #hud{
- position:absolute;
+ position:fixed;
  top:15px;
  left:15px;
+ z-index:5;
  color:white;
- text-shadow:2px 2px 4px black;
+ text-shadow:2px 2px 5px black;
+ pointer-events:none;
 }
+
+#hud h2{
+ font-size:23px;
+ margin-bottom:8px;
+}
+
 #speed{
- font-size:22px;
+ font-size:25px;
  font-weight:bold;
 }
+
+#distance,#nitroText{
+ font-size:15px;
+ margin-top:5px;
+}
+
+#garage{
+ position:fixed;
+ top:15px;
+ right:10px;
+ z-index:5;
+ display:flex;
+ gap:5px;
+}
+
 #controls{
- position:absolute;
- bottom:25px;
+ position:fixed;
+ bottom:20px;
  width:100%;
  display:flex;
  justify-content:space-around;
  align-items:center;
- pointer-events:auto;
+ z-index:5;
+ flex-wrap:wrap;
+ gap:8px;
 }
+
 button{
  background:#101d36;
  color:white;
  border:2px solid white;
- border-radius:15px;
- padding:18px;
+ border-radius:12px;
+ padding:15px 12px;
+ font-size:15px;
  font-weight:bold;
- font-size:18px;
  touch-action:none;
+}
+
+button:active{
+ background:#e00020;
+}
+
+#nitro{
+ background:#075baf;
 }
